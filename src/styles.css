@@ -14,12 +14,14 @@
     --text-color: #202020;
     --primary-color: #21AF27;
     --accent-color: #343F52;
+    --overlay-text-color: #ffffff;
+    --overlay-text-secondary: rgba(255, 255, 255, 0.8);
 }
 
 @font-face {
     font-family: 'AvenirArabic-SharjahGovt';
     src: url('/assets/fonts/AvenirArabic-SharjahGovt.woff2') format('woff2');
-    /* or .ttf if applicable */
+
     font-weight: normal;
     font-style: normal;
 }
@@ -47,4 +49,8 @@ body {
     --text-color: #caffc7;
     --primary-color: #92C83E;
     --accent-color: #343F52;
+}
+
+h1{
+    font-weight: 300 !important;
 }

@@ -1,0 +1,71 @@
+/* Overlay container with theme-based text color */
+.hero-overlay {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: var(--text-color);
+}
+
+/* Headline text */
+.hero-headline {
+    color: var(--text-color);
+    font-family: var(--body-font);
+}
+
+/* Description text */
+.hero-description {
+    color: var(--text-color-secondary, #AAB0BC);
+    font-family: var(--body-font);
+}
+
+/* Stat Box container */
+.stat-box {
+    background: linear-gradient(to bottom right, var(--accent-color), var(--primary-color));
+    color: var(--text-color);
+    border-radius: 20px;
+}
+
+/* Stat value */
+.stat-value {
+    font-size: 3.5rem;
+    font-weight: bold;
+    line-height: 1;
+}
+
+/* Stat unit */
+.stat-unit {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1;
+}
+
+/* App description */
+.stat-description {
+    font-size: 0.875rem;
+    font-weight: 300;
+    margin-bottom: 1.25rem;
+}
+
+/* CTA button */
+.stat-cta {
+    background-color: var(--primary-color);
+}
+
+.stat-cta:hover {
+    background-color: #1b8e21;
+}
+
+/* Grid feature titles */
+.grid-title {
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+/* Grid feature descriptions */
+.grid-description {
+    color: var(--text-color-secondary, #AAB0BC);
+    font-size: 0.75rem;
+}
+
+*{
+    --overlay-text-color: #ffffff;
+    --overlay-text-secondary: rgba(255, 255, 255, 0.8);
+}

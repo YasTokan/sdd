@@ -8,23 +8,22 @@
                 Your browser does not support the video tag.
             </video>
 
-
-            <div class="absolute inset-0 bg-black/20 flex items-center text-white px-4 md:px-8 py-6">
-                <div class="max-w-sm space-y-3  ">
+            <div
+                class="absolute inset-0 bg-black/20 flex items-center text-[var(--overlay-text-color)] px-4 md:px-8 py-6">
+                <div class="max-w-sm space-y-3">
                     <!-- Headline -->
-                    <h1 class="text-xl md:text-3xl font-semibold leading-snug">
+                    <h1 class="text-2xl md:text-3xl   font-semibold leading-snug text-[var(--overlay-text-color)]">
                         {{ 'HERO.TITLE' | translate }}
                     </h1>
 
-                    <p class="text-xs md:text-sm text-gray-200 leading-relaxed">
+                    <p class="text-xs md:text-sm leading-relaxed text-[var(--overlay-text-secondary)]">
                         {{ 'HERO.DESCRIPTION' | translate }}
                     </p>
                 </div>
             </div>
 
-
             <div style="bottom: 80px;"
-                class="absolute bottom-8 rtl:left-6 ltr:right-6 bg-gradient-to-br from-[#2E2F31] to-[#1e402f] text-white rounded-[20px] px-6 py-5 w-[270px] shadow-lg">
+                class="absolute bottom-8 rtl:left-6 ltr:right-6 bg-gradient-to-br from-[var(--accent-color)] to-[var(--primary-color)] text-[var(--overlay-text-color)] rounded-[20px] px-6 py-5 w-[270px] shadow-lg">
 
                 <!-- Stat Value -->
                 <div class="flex items-end rtl:space-x-reverse space-x-1 mb-1">
@@ -41,156 +40,51 @@
 
                     <!-- Text -->
                     <div class="text-sm leading-tight text-start rtl:text-end rtl:order-1">
-                        <div class="font-medium text-white">{{ 'STAT.USING' | translate }}</div>
-                        <div class="text-white/80">{{ 'STAT.APP' | translate }}</div>
+                        <div class="font-light text-[var(--overlay-text-color)]">{{ 'STAT.USING' | translate }}</div>
+                        <div class="text-[color:rgba(255,255,255,0.8)]">{{ 'STAT.APP' | translate }}</div>
                     </div>
                 </div>
-
-
 
                 <!-- Corner Button (flip side for RTL) -->
                 <div class="absolute -bottom-1 ltr:-right-2 rtl:-left-2">
                     <button
-                        class="w-16 h-16 rounded-full bg-[#21AF27] hover:bg-green-600 transition flex items-center justify-center shadow-md">
-                        <i class="fas fa-arrow-up-right-from-square text-white text-lg rtl:  transition-transform"></i>
+                        class="w-16 h-16 rounded-full bg-[var(--primary-color)] hover:bg-green-600 transition flex items-center justify-center shadow-md">
+                        <i
+                            class="fas fa-arrow-up-right-from-square text-[var(--overlay-text-color)] text-lg rtl:transition-transform"></i>
                     </button>
                 </div>
             </div>
 
-
-            <!-- Final -->
-            <!--  <div style="bottom: 80px; right: 60px;"
-                class="absolute bottom-8 right-6 bg-gradient-to-br from-[#2E2F31] to-[#1e402f] text-white rounded-[20px] px-6 py-5 w-[270px] shadow-lg">
-
-                
-                <div class="flex items-end space-x-1 mb-1">
-                    <span class="text-[3.5rem] font-bold leading-none">1.2</span>
-                    <span class="text-[1.5rem] font-medium leading-none">m</span>
-                </div>
-                <div class="text-sm font-light mb-5">Active Citizen & Resident</div>
-
-              
-                <div class="flex items-center gap-3">
-                    <img src="assets/media/images/app-logo.png" alt="App Logo" class="w-10 h-10 object-contain" />
-                    <div class="text-sm leading-tight">
-                        <div class="font-medium text-white">Using</div>
-                        <div class="text-white/80">Sharjah Digital App</div>
-                    </div>
-                </div>
-
-              
-                <div class="absolute -bottom-1 -right-2">
-                    <button
-                        class="w-16 h-16 rounded-full bg-[#21AF27] hover:bg-green-600 transition flex items-center justify-center shadow-md">
-                        <i class="fas fa-arrow-up-right-from-square text-white text-lg"></i>
-                    </button>
-                </div>
-
-
-
-            </div> -->
-
-
-            <!-- Refined STAT BOX -->
-            <!--  <div style="bottom: 80px;"
-                class="absolute bottom-8 right-6 bg-[#2E2F31] text-white rounded-xl px-5 py-4 w-[250px] shadow-lg">
-               
-                <div class="flex items-baseline leading-none mb-1">
-                    <span class="text-[3.25rem] font-bold">1.2</span>
-                    <span class="text-[1.25rem] ml-1">m</span>
-                </div>
-                <div class="text-[0.7rem] text-gray-300 mb-3">Active Citizen & Resident</div>
-
-               
-                <div class="flex items-start gap-2">
-                 
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="#00c78b" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="7" height="7" rx="1.5"></rect>
-                        <rect y="8" width="7" height="7" rx="1.5"></rect>
-                        <rect x="8" width="7" height="7" rx="1.5"></rect>
-                        <rect x="8" y="8" width="7" height="7" rx="1.5"></rect>
-                    </svg>
-
-                 
-                    <div class="text-[0.72rem] leading-tight">
-                        <div class="font-medium text-white">Using</div>
-                        <div class="text-gray-400">Sharjah Digital App</div>
-                    </div>
-                </div>
-
-                
-                <div class="flex justify-end mt-4">
-                    <button
-                        class="w-8 h-8 rounded-full bg-green-500 hover:bg-green-600 transition flex items-center justify-center">
-                        <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" stroke-width="2"
-                            viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M12 5l7 7-7 7" />
-                        </svg>
-                    </button>
-                </div>
-            </div> -->
-
-
-
-
-
-
             <!-- FEATURE BAR - Bottom left -->
-            <div class="absolute bottom-4 left-4 text-white w-full max-w-5xl px-4 md:px-6">
+            <div class="absolute bottom-4 left-4 text-[var(--overlay-text-color)] w-full max-w-5xl px-4 md:px-6">
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
 
                     <div class="text-start rtl:text-end">
                         <div class="font-semibold mb-1">{{ 'GRID.TITLE_1' | translate }}</div>
-                        <p class="text-xs text-gray-200">{{ 'GRID.TEXT_1' | translate }}</p>
+                        <p class="text-xs text-[var(--overlay-text-secondary)]">{{ 'GRID.TEXT_1' | translate }}</p>
                     </div>
 
                     <div class="text-start rtl:text-end">
                         <div class="font-semibold mb-1">{{ 'GRID.TITLE_2' | translate }}</div>
-                        <p class="text-xs text-gray-200">{{ 'GRID.TEXT_2' | translate }}</p>
+                        <p class="text-xs text-[var(--overlay-text-secondary)]">{{ 'GRID.TEXT_2' | translate }}</p>
                     </div>
 
                     <div class="text-start rtl:text-end">
                         <div class="font-semibold mb-1">{{ 'GRID.TITLE_3' | translate }}</div>
-                        <p class="text-xs text-gray-200">{{ 'GRID.TEXT_3' | translate }}</p>
+                        <p class="text-xs text-[var(--overlay-text-secondary)]">{{ 'GRID.TEXT_3' | translate }}</p>
                     </div>
 
                     <div class="text-start rtl:text-end">
                         <div class="font-semibold mb-1">{{ 'GRID.TITLE_4' | translate }}</div>
-                        <p class="text-xs text-gray-200">{{ 'GRID.TEXT_4' | translate }}</p>
+                        <p class="text-xs text-[var(--overlay-text-secondary)]">{{ 'GRID.TEXT_4' | translate }}</p>
                     </div>
 
                 </div>
             </div>
 
-
-            <!--  <div class="absolute bottom-4 left-4 text-white w-full max-w-5xl px-4 md:px-6">
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
-                    <div>
-                        <div class="font-semibold mb-1">Empower People</div>
-                        <p class="text-xs text-gray-200">There are many variations of Lorem Ipsum...</p>
-                    </div>
-                    <div>
-                        <div class="font-semibold mb-1">Digital Transformation</div>
-                        <p class="text-xs text-gray-200">Lorem Ipsum passages in various forms...</p>
-                    </div>
-                    <div>
-                        <div class="font-semibold mb-1">Datacenter</div>
-                        <p class="text-xs text-gray-200">Altered by humour, or randomised words...</p>
-                    </div>
-                    <div>
-                        <div class="font-semibold mb-1">Active Service Directory</div>
-                        <p class="text-xs text-gray-200">Randomised words which don't look real...</p>
-                    </div>
-                </div>
-            </div> -->
-
-
         </div>
     </div>
-
 </div>
-
-
 
 <!-- MOBILE VERSION -->
 <div class="block md:hidden px-4 mt-5">
@@ -203,13 +97,13 @@
         </video>
 
         <!-- Text Overlay -->
-        <div class="absolute inset-0 flex flex-col justify-end px-4 py-6 bg-black/30 text-white">
+        <div class="absolute inset-0 flex flex-col justify-end px-4 py-6 bg-black/30 text-[var(--overlay-text-color)]">
             <div class="space-y-2 max-w-xs">
-                <h1 class="text-xl md:text-3xl font-semibold leading-snug">
+                <h1 class="text-xl md:text-3xl font-semibold leading-snug text-[var(--overlay-text-color)]">
                     {{ 'HERO.TITLE' | translate }}
                 </h1>
 
-                <p class="text-xs md:text-sm text-gray-200 leading-relaxed">
+                <p class="text-xs md:text-sm leading-relaxed text-[var(--overlay-text-secondary)]">
                     {{ 'HERO.DESCRIPTION' | translate }}
                 </p>
             </div>
