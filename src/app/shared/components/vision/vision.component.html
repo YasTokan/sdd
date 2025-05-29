@@ -1,12 +1,15 @@
-<section class="px-6 md:px-12 py-16 bg-white text-gray-800" style="margin-bottom: 50%;">
+<section class="px-6 md:px-12 py-16 bg-white text-gray-800"  >
     <!--   Desktop -->
     <div class="hidden md:grid max-w-7xl mx-auto md:grid-cols-2 gap-12 items-start">
 
         <!-- Left: Text Content -->
         <div class="space-y-6">
 
-           
-            <p class="uppercase text-sm text-gray-400 font-semibold">Our Vision</p>
+            <app-text-section [smallTitle]="'Our Vision'"
+                [mainTitle]="' One Government Initiative lorem Ipsum is simply dummy text of the printing and typesetting industry'"
+                [description]=" '  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s                standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it                to                make a type specimen book. It has survived not only five centuries, but also the leap into electronic                 typesetting, remaining essentially unchanged.'"></app-text-section>
+
+            <!--  <p class="uppercase text-sm text-gray-400 font-semibold">Our Vision</p>
 
             <h2 class="text-3xl md:text-5xl font-extrabold leading-tight text-gray-800">
                 One Government Initiative lorem Ipsum is simply dummy text of the printing and typesetting industry
@@ -20,7 +23,7 @@
                 make a type specimen book. It has survived not only five centuries, but also the leap into electronic
                 typesetting, remaining essentially unchanged.
             </p>
-
+ -->
             <!-- Profiles -->
             <div class="grid grid-cols-2 gap-6 pt-6">
                 <!-- Profile 1 -->
