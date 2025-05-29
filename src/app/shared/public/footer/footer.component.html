@@ -6,7 +6,7 @@
         <!-- Logo & Department Name -->
         <div class="flex items-center space-x-4 rtl:space-x-reverse text-start rtl:text-start">
             <img src="/assets/logo.png" alt="Sharjah Logo" class="w-56 h-56 object-contain" />
-           <!--  <div class="text-sm leading-tight">
+            <!--  <div class="text-sm leading-tight">
                 <p class="font-medium">{{ 'FOOTER.GOV' | translate }}</p>
                 <p>{{ 'FOOTER.DEPARTMENT' | translate }}</p>
             </div> -->
@@ -15,12 +15,17 @@
         <!-- Navigation -->
         <nav
             class="flex flex-wrap justify-center gap-6 rtl:flex-row-reverse text-sm font-medium text-black text-center rtl:text-right">
-            <a href="#">{{ 'NAV.HOME' | translate }}</a>
-            <a href="#">{{ 'NAV.VISION' | translate }}</a>
-            <a href="#">{{ 'NAV.SCOPE' | translate }}</a>
-            <a href="#">{{ 'NAV.SERVICES' | translate }}</a>
-            <a href="#">{{ 'NAV.INITIATIVES' | translate }}</a>
-            <a href="#">{{ 'NAV.DOWNLOAD' | translate }}</a>
+            <a (click)="jumpToSection('home')" style="cursor: pointer;">{{ 'NAV.HOME' | translate }}</a>
+            <a (click)="jumpToSection('vision')" class=" transition">{{ 'NAV.VISION' | translate
+                }}</a>
+            <a (click)="jumpToSection('scope')" class=" transition">{{ 'NAV.SCOPE' | translate
+                }}</a>
+            <a (click)="jumpToSection('home')" class=" transition">{{ 'NAV.SERVICES' | translate
+                }}</a>
+            <a (click)="jumpToSection('home')" class=" transition">{{ 'NAV.INITIATIVES' | translate
+                }}</a>
+            <a (click)="jumpToSection('home')" class=" transition">{{ 'NAV.DOWNLOAD' | translate
+                }}</a>
         </nav>
     </div>
 

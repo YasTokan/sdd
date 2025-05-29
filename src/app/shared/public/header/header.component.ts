@@ -1,4 +1,4 @@
-import { Component, HostListener } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({
@@ -6,7 +6,7 @@ import { TranslateService } from '@ngx-translate/core';
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
 })
-export class HeaderComponent {
+export class HeaderComponent implements OnInit {
   mobileMenuOpen = false;
   scrolled = false;
 
@@ -71,7 +71,19 @@ export class HeaderComponent {
     htmlEl.classList.add(`theme-${key}`);
   }
 
- 
+
+  jumpToSection(section: string | null) {
+    if (section) document.getElementById(section)?.scrollIntoView({ behavior: 'smooth' });
+  }
+
+
+  sections: any;
+  navLi: any;
+
+  ngOnInit() {
+    this.sections = document.querySelectorAll('section');
+    this.navLi = document.querySelectorAll('nav .container .navigation ul li');
+  }
 
 
 }

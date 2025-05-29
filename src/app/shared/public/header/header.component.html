@@ -12,12 +12,17 @@
 
         <!-- Center: Navigation -->
         <nav class="flex space-x-6 rtl:space-x-reverse text-sm font-medium text-gray-800">
-            <a href="#" class="hover:text-blue-600 transition">{{ 'NAV.HOME' | translate }}</a>
-            <a href="#" class="hover:text-blue-600 transition">{{ 'NAV.VISION' | translate }}</a>
-            <a href="#" class="hover:text-blue-600 transition">{{ 'NAV.SCOPE' | translate }}</a>
-            <a href="#" class="hover:text-blue-600 transition">{{ 'NAV.SERVICES' | translate }}</a>
-            <a href="#" class="hover:text-blue-600 transition">{{ 'NAV.INITIATIVES' | translate }}</a>
-            <a href="#" class="hover:text-blue-600 transition">{{ 'NAV.DOWNLOAD' | translate }}</a>
+            <a (click)="jumpToSection('home')" style="cursor: pointer;">{{ 'NAV.HOME' | translate }}</a>
+            <a (click)="jumpToSection('vision')" class=" transition">{{ 'NAV.VISION' | translate
+                }}</a>
+            <a (click)="jumpToSection('scope')" class=" transition">{{ 'NAV.SCOPE' | translate
+                }}</a>
+            <a (click)="jumpToSection('home')" class=" transition">{{ 'NAV.SERVICES' | translate
+                }}</a>
+            <a (click)="jumpToSection('home')" class=" transition">{{ 'NAV.INITIATIVES' | translate
+                }}</a>
+            <a (click)="jumpToSection('home')" class=" transition">{{ 'NAV.DOWNLOAD' | translate
+                }}</a>
         </nav>
 
         <!-- Right: Language & Icon -->
@@ -81,9 +86,12 @@
     <nav class="space-y-4 border-t pt-4">
 
         <!-- Navigation Links -->
-        <a href="#" class="block text-lg text-gray-900 border-b pb-2">{{ 'NAV.HOME' | translate }}</a>
-        <a href="#" class="block text-lg text-gray-900 border-b pb-2">{{ 'NAV.VISION' | translate }}</a>
-        <a href="#" class="block text-lg text-gray-900 border-b pb-2">{{ 'NAV.SCOPE' | translate }}</a>
+        <a (click)="jumpToSection('home')" class="block text-lg text-gray-900 border-b pb-2">{{ 'NAV.HOME' | translate
+            }}</a>
+        <a (click)="jumpToSection('vision')" class="block text-lg text-gray-900 border-b pb-2">{{ 'NAV.VISION' |
+            translate }}</a>
+        <a (click)="jumpToSection('scope')" class="block text-lg text-gray-900 border-b pb-2">{{ 'NAV.SCOPE' | translate
+            }}</a>
         <a href="#" class="block text-lg text-gray-900 border-b pb-2">{{ 'NAV.SERVICES' | translate }}</a>
         <a href="#" class="block text-lg text-gray-900 border-b pb-2">{{ 'NAV.INITIATIVES' | translate }}</a>
         <a href="#" class="block text-lg text-gray-900 border-b pb-2">{{ 'NAV.DOWNLOAD' | translate }}</a>
