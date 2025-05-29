@@ -7,6 +7,7 @@
     --text-color: #202020;
     --primary-color: #21AF27;
     --accent-color: #343F52;
+    --text-color-secondary: #AAB0BC;
 }
 
 .theme-default {
@@ -15,7 +16,7 @@
     --primary-color: #21AF27;
     --accent-color: #343F52;
     --overlay-text-color: #ffffff;
-    --overlay-text-secondary: rgba(255, 255, 255, 0.8);
+    --overlay-text-secondary: /* #F6F7F8 */ #AAB0BC /* rgba(255, 255, 255, 0.8) */;
 }
 
 @font-face {
