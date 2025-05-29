@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { HeaderComponent } from './header/header.component';
+import { HeaderComponent } from './public/header/header.component';
 import { CommonModule } from '@angular/common';
-import { HeroBannerComponent } from './hero-banner/hero-banner.component';
-import { VisionComponent } from './vision/vision.component';
-import { FooterComponent } from './public/footer/footer.component';
+import { HeroBannerComponent } from './components/hero-banner/hero-banner.component';
+import { VisionComponent } from './components/vision/vision.component';
+import { TextSectionComponent } from './components/text-section/text-section.component';
 
 
 
@@ -13,8 +13,9 @@ import { FooterComponent } from './public/footer/footer.component';
         HeaderComponent,
         HeroBannerComponent,
         VisionComponent,
-        FooterComponent,
-        
+        TextSectionComponent,
+
+
     ],
     imports: [
         CommonModule
@@ -23,7 +24,8 @@ import { FooterComponent } from './public/footer/footer.component';
     exports: [
         HeaderComponent,
         HeroBannerComponent,
-        VisionComponent
+        VisionComponent,
+        TextSectionComponent
     ],
     providers: [],
 
