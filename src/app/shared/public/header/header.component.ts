@@ -1,4 +1,5 @@
 import { Component, HostListener } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-header',
@@ -7,7 +8,7 @@ import { Component, HostListener } from '@angular/core';
 })
 export class HeaderComponent {
   mobileMenuOpen = false;
- scrolled = false;
+  scrolled = false;
 
   @HostListener('window:scroll', [])
   onScroll(): void {
@@ -20,4 +21,17 @@ export class HeaderComponent {
   closeMenu() {
     this.mobileMenuOpen = false;
   }
+
+  constructor(private translate: TranslateService) {
+
+  }
+  switchLang(lang: string) {
+    document.documentElement.lang = lang;
+    this.translate.use(lang);
+    document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+
+    // Optional: toggle body class for Tailwind RTL if used
+    document.body.classList.toggle('rtl', lang === 'ar');
+  }
+
 }

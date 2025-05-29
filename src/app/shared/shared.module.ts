@@ -8,6 +8,7 @@ import { TextSectionComponent } from './components/text-section/text-section.com
 import { ScopeComponent } from './components/scope/scope.component';
 import { ScopeCardComponent } from './components/scope-card/scope-card.component';
 import { FooterComponent } from './public/footer/footer.component';
+import { TranslateModule } from '@ngx-translate/core';
 
 
 
@@ -24,7 +25,8 @@ import { FooterComponent } from './public/footer/footer.component';
 
     ],
     imports: [
-        CommonModule
+        CommonModule,
+        TranslateModule  
 
     ],
     exports: [

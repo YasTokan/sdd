@@ -1,0 +1,16 @@
+{
+    "NAV": {
+        "HOME": "Home",
+        "VISION": "Our Vision",
+        "SCOPE": "Our Scope",
+        "SERVICES": "Services & Solutions",
+        "INITIATIVES": "Initiatives",
+        "DOWNLOAD": "Download Center",
+        "EN": "EN",
+        "AR": "عربي"
+    },
+    "HERO": {
+        "TITLE": "Establishing Sharjah as a global leader in innovation, safety and security",
+        "DESCRIPTION": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised."
+    }
+}
