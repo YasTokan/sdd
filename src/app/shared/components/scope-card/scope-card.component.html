@@ -1,26 +1,28 @@
 <div
-  class="relative rounded-xl border border-gray-200 p-6 min-w-[320px] w-[320px] h-[360px] flex flex-col justify-between text-gray-800 cursor-pointer transition duration-300 hover:border-[#21AF27] group">
+    class="relative rounded-xl border border-gray-200 p-6 min-w-[320px] w-[320px] h-[360px] flex flex-col justify-between text-gray-800 cursor-pointer transition duration-300 hover:border-[#21AF27] group rtl:text-right">
 
-  <!-- Number (top-right) -->
-  <span class="absolute top-6 right-6 text-gray-300 text-xl font-semibold">{{ number }}</span>
+    <!-- Number (top-corner) -->
+    <span class="absolute top-6 right-6 rtl:right-auto rtl:left-6 text-gray-300 text-xl font-semibold">
+        {{ number }}
+    </span>
 
-  <!-- Title & Description -->
-  <div class="space-y-2 pr-8">
-    <h3 class="text-xl font-bold leading-snug">{{ title }}</h3> <!-- made text bigger -->
-    <p class="text-base text-gray-400">{{ description }}</p>   <!-- made text bigger -->
-  </div>
-
-  <!-- Icon (bottom-right) -->
-  <div class="mt-6 flex justify-end">
-    <div class="relative  w-24 h-24"> <!-- made icon bigger -->
-      <!-- Grey icon (default) -->
-      <img [src]="iconSrc" alt="Icon"
-           class="absolute inset-0 w-full h-full object-contain filter brightness-0 invert-[85%] group-hover:opacity-0 transition-opacity duration-300" />
-
-      <!-- Green icon (on hover) -->
-      <img [src]="iconSrc" alt="Icon"
-           class="absolute inset-0 w-full h-full object-contain opacity-0 group-hover:opacity-100 filter brightness-0 invert-[42%] sepia-[100%] saturate-[850%] hue-rotate-[70deg] contrast-[105%] transition-opacity duration-300" />
+    <!-- Title & Description -->
+    <div class="space-y-2 pr-8 rtl:pr-0 rtl:pl-8">
+        <h3 class="text-xl font-bold leading-snug">{{ title }}</h3>
+        <p class="text-base text-gray-400">{{ description }}</p>
     </div>
-  </div>
+
+    <!-- Icon (bottom-corner) -->
+    <div class="mt-6 flex justify-end rtl:justify-start">
+        <div class="relative w-24 h-24">
+            <!-- Grey icon -->
+            <img [src]="iconSrc" alt="Icon"
+                class="absolute inset-0 w-full h-full object-contain filter brightness-0 invert-[85%] group-hover:opacity-0 transition-opacity duration-300" />
+
+            <!-- Green icon on hover -->
+            <img [src]="iconSrc" alt="Icon"
+                class="absolute inset-0 w-full h-full object-contain opacity-0 group-hover:opacity-100 filter brightness-0 invert-[42%] sepia-[100%] saturate-[850%] hue-rotate-[70deg] contrast-[105%] transition-opacity duration-300" />
+        </div>
+    </div>
 
 </div>

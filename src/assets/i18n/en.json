@@ -12,5 +12,66 @@
     "HERO": {
         "TITLE": "Establishing Sharjah as a global leader in innovation, safety and security",
         "DESCRIPTION": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised."
+    },
+    "STAT": {
+        "VALUE": "1.2",
+        "UNIT": "m",
+        "LABEL": "Active Citizen & Resident",
+        "USING": "Using",
+        "APP": "Sharjah Digital App"
+    },
+    "GRID": {
+        "TITLE_1": "Empower People",
+        "TEXT_1": "There are many variations of Lorem Ipsum...",
+        "TITLE_2": "Digital Transformation",
+        "TEXT_2": "Lorem Ipsum passages in various forms...",
+        "TITLE_3": "Datacenter",
+        "TEXT_3": "Altered by humour, or randomised words...",
+        "TITLE_4": "Active Service Directory",
+        "TEXT_4": "Randomised words which don't look real..."
+    },
+    "TEXT_SECTION": {
+        "VISION": {
+            "SMALL": "Our Vision",
+            "MAIN": "One Government Initiative lorem Ipsum is simply dummy text of the printing and typesetting industry",
+            "DESC": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
+        },
+        "SCOPE": {
+            "SMALL": "Our Scope",
+            "MAIN": "Sustainable Digital Future",
+            "DESC": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
+        }
+    },
+    "TEAM": {
+        "PERSON_1": {
+            "NAME": "Shk. Saud Al Qasimi",
+            "ROLE": "Director General of Sharjah Digital Department"
+        },
+        "PERSON_2": {
+            "NAME": "Eng. Lamia Al Shamsi",
+            "ROLE": "Director of Sharjah Digital Department"
+        }
+    },
+    "SERVED": {
+        "TITLE": "Proud to Serve",
+        "COUNT_LABEL": "Government Departments"
+    },
+    "SCOPE": {
+        "G2G": {
+            "TITLE": "Government to Government Solutions",
+            "DESC": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+        },
+        "G2U": {
+            "TITLE": "Government to Users Solutions",
+            "DESC": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+        },
+        "SECURITY": {
+            "TITLE": "Safeguard and Cybersecurity",
+            "DESC": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+        },
+        "AI": {
+            "TITLE": "AI and Machine Learning",
+            "DESC": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+        }
     }
 }

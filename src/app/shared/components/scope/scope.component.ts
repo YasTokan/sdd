@@ -7,7 +7,36 @@ import { Component, ElementRef, ViewChild } from '@angular/core';
 })
 export class ScopeComponent {
 
+
   scopeArr = [
+    {
+      titleKey: 'SCOPE.G2G.TITLE',
+      descriptionKey: 'SCOPE.G2G.DESC',
+      number: '01',
+      iconSrc: 'assets/icons/government.svg'  
+    },
+    {
+      titleKey: 'SCOPE.G2U.TITLE',
+      descriptionKey: 'SCOPE.G2U.DESC',
+      number: '02',
+      iconSrc: 'assets/icons/users.svg'
+    },
+    {
+      titleKey: 'SCOPE.SECURITY.TITLE',
+      descriptionKey: 'SCOPE.SECURITY.DESC',
+      number: '03',
+      iconSrc: 'assets/icons/shield.svg'
+    },
+    {
+      titleKey: 'SCOPE.AI.TITLE',
+      descriptionKey: 'SCOPE.AI.DESC',
+      number: '04',
+      iconSrc: 'assets/icons/ai.svg'
+    }
+  ];
+
+
+  /* scopeArr = [
     {
       title: "Government to Government Solutions",
       description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
@@ -33,7 +62,7 @@ export class ScopeComponent {
       iconSrc: "assets/icons/ai.svg" // <-- update this path as needed
     },
     
-  ];
+  ]; */
   @ViewChild('scrollContainer', { static: false }) scrollContainer!: ElementRef;
 
   scrollLeft() {
