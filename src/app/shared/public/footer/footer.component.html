@@ -1,37 +1,44 @@
 <footer class="bg-[#f7f8f9] rounded-[24px] mx-[7%] px-8 pt-8 pb-4 text-gray-700 mb-[70%] sm:mb-0">
+
     <!-- Top section -->
     <div class="max-w-7xl mx-auto flex flex-col lg:flex-row lg:items-center lg:justify-between space-y-8 lg:space-y-0">
 
         <!-- Logo & Department Name -->
-        <div class="flex items-center space-x-4">
-            <img src="/assets/logo.png" alt="Sharjah Logo" class="w-20 h-20 object-contain" />
-            <div class="text-sm leading-tight">
-                <p class="font-medium">Government of Sharjah</p>
-                <p>Sharjah Digital Department</p>
-            </div>
+        <div class="flex items-center space-x-4 rtl:space-x-reverse text-start rtl:text-start">
+            <img src="/assets/logo.png" alt="Sharjah Logo" class="w-56 h-56 object-contain" />
+           <!--  <div class="text-sm leading-tight">
+                <p class="font-medium">{{ 'FOOTER.GOV' | translate }}</p>
+                <p>{{ 'FOOTER.DEPARTMENT' | translate }}</p>
+            </div> -->
         </div>
 
         <!-- Navigation -->
-        <nav class="flex flex-wrap justify-center gap-6 text-sm font-medium text-black">
-            <a href="#">Home</a>
-            <a href="#">Our Vision</a>
-            <a href="#">Our Scope</a>
-            <a href="#">Services & Solutions</a>
-            <a href="#">Initiatives</a>
-            <a href="#">Download Center</a>
+        <nav
+            class="flex flex-wrap justify-center gap-6 rtl:flex-row-reverse text-sm font-medium text-black text-center rtl:text-right">
+            <a href="#">{{ 'NAV.HOME' | translate }}</a>
+            <a href="#">{{ 'NAV.VISION' | translate }}</a>
+            <a href="#">{{ 'NAV.SCOPE' | translate }}</a>
+            <a href="#">{{ 'NAV.SERVICES' | translate }}</a>
+            <a href="#">{{ 'NAV.INITIATIVES' | translate }}</a>
+            <a href="#">{{ 'NAV.DOWNLOAD' | translate }}</a>
         </nav>
     </div>
 
     <!-- Bottom row -->
-    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between text-xs text-gray-400">
-        <p>Copyright Reserved to Sharjah Digital Department © 2024.</p>
-        <div class="flex items-center space-x-3 mx-[3%] mt-4 sm:mt-0 text-sm text-gray-500">
-            <span>Follow us</span>
+    <div
+        class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between text-xs text-gray-400 text-center rtl:text-right mt-6">
 
+        <!-- Copyright -->
+        <p>{{ 'FOOTER.COPYRIGHT' | translate }}</p>
+
+        <!-- Social -->
+        <div class="flex items-center space-x-3 rtl:space-x-reverse mx-[3%] mt-4 sm:mt-0 text-sm text-gray-500">
+            <span>{{ 'FOOTER.FOLLOW' | translate }}</span>
             <a href="#"><i class="fab fa-facebook-f"></i></a>
             <a href="#"><i class="fab fa-instagram"></i></a>
             <a href="#"><i class="fab fa-youtube"></i></a>
             <a href="#"><i class="fab fa-x-twitter"></i></a>
         </div>
     </div>
+
 </footer>

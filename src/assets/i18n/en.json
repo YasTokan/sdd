@@ -73,5 +73,24 @@
             "TITLE": "AI and Machine Learning",
             "DESC": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
         }
+    },
+    "FOOTER": {
+        "COPYRIGHT": "Copyright Reserved to Sharjah Digital Department © 2024.",
+        "FOLLOW": "Follow us",
+        "GOV": "Government of Sharjah",
+        "DEPARTMENT": "Sharjah Digital Department"
+    },
+    "ACCESSIBILITY": {
+        "TEXT_RESIZE": {
+            "TITLE": "Text Resize",
+            "DESCRIPTION": "Use the buttons below to increase or decrease the text size."
+        },
+        "CONTRAST": {
+            "TITLE": "Contrast Switch",
+            "DESCRIPTION": "Use the toggle below to switch the contrast.",
+            "OPTION_DEFAULT": "One Portal Colors",
+            "OPTION_COLORBLIND": "Color Blind",
+            "OPTION_GREEN": "Green Weeknes"
+        }
     }
 }

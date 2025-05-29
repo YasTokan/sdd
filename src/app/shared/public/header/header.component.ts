@@ -34,4 +34,44 @@ export class HeaderComponent {
     document.body.classList.toggle('rtl', lang === 'ar');
   }
 
+
+  textSizes = [
+    { key: 'xs', label: 'A--' },
+    { key: 'sm', label: 'A-' },
+    { key: 'md', label: 'A' },
+    { key: 'lg', label: 'A+' },
+    { key: 'xl', label: 'A++' }
+  ];
+
+  activeFontSize: string = 'md';
+
+  setFontSize(size: string) {
+    this.activeFontSize = size;
+
+    // Apply class to <html> or <body> globally
+    const htmlEl = document.documentElement;
+    htmlEl.classList.remove('text-xs', 'text-sm', 'text-md', 'text-lg', 'text-xl');
+    htmlEl.classList.add(`text-${size}`);
+  }
+
+
+  contrastOptions = [
+    { key: 'default', label: 'ACCESSIBILITY.CONTRAST.OPTION_DEFAULT' },
+    { key: 'color-blind', label: 'ACCESSIBILITY.CONTRAST.OPTION_COLORBLIND' },
+    { key: 'green', label: 'ACCESSIBILITY.CONTRAST.OPTION_GREEN' }
+  ];
+
+  selectedContrast: string = 'default';
+
+  setContrast(key: string) {
+    this.selectedContrast = key;
+
+    const htmlEl = document.documentElement;
+    htmlEl.classList.remove('theme-default', 'theme-color-blind', 'theme-green');
+    htmlEl.classList.add(`theme-${key}`);
+  }
+
+ 
+
+
 }

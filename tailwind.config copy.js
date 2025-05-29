@@ -6,14 +6,7 @@ module.exports = {
   darkMode: 'class',
   theme: {
     extend: {
-      colors: {
-        // Dynamic theme tokens
-        bg: 'var(--bg-color)',
-        text: 'var(--text-color)',
-        primary: 'var(--primary-color)',
-        accent: 'var(--accent-color)',
-
-        // Full color palette from the image
+      /* colors: {
         white: '#ffffff',
         'dark-gray': '#343F52',
         'dark-gray2': '#484848',
@@ -24,33 +17,19 @@ module.exports = {
         'base-gray': '#EDF0F2',
         green: '#21AF27',
         'light-green': '#92C83E'
+      }, */
+      colors: {
+        bg: 'var(--bg-color)',
+        text: 'var(--text-color)',
+        primary: 'var(--primary-color)',
+        accent: 'var(--accent-color)',
       },
-      fontSize: {
+      textSize: {
         xs: '0.75rem',
         sm: '0.875rem',
         md: '1rem',
         lg: '1.125rem',
         xl: '1.25rem'
-      },
-      /* fontFamily: {
-        avenir: ['AvenirArabic-SharjahGovt', 'sans-serif']
-      }, */
-      fontFamily: {
-        body: ['Inter', 'sans-serif'], // For English
-        arabic: ['AvenirArabic-SharjahGovt', 'sans-serif'] // For Arabic
-      },
-      fontSize: {
-        // Desktop Sizes
-        h1: ['53.3px', { lineHeight: '1.2' }], // 40pt
-        h2: ['56px', { lineHeight: '1.2' }],   // 42pt
-        h3: ['48px', { lineHeight: '1.2' }],   // 36pt
-        h4: ['34.6px', { lineHeight: '1.2' }], // 26pt
-        h5: ['26.6px', { lineHeight: '1.2' }], // 20pt
-        body: ['18.6px', { lineHeight: '1.6' }], // 14pt
-        'l-body': ['21.3px', { lineHeight: '1.6' }], // 16pt
-        's-body': ['16px', { lineHeight: '1.5' }], // 12pt
-        subtitle: ['21.3px', { lineHeight: '1.4' }], // 16pt
-        subhead: ['24px', { lineHeight: '1.4' }] // 18pt
       },
       keyframes: {
         'fade-in-up': {

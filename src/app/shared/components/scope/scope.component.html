@@ -1,64 +1,77 @@
 <section class="px-6 md:px-12 py-16 bg-white text-gray-800">
     <div class="max-w-7xl mx-auto space-y-10">
-        <!-- Text Section -->
 
-        <app-text-section [smallTitle]="'TEXT_SECTION.SCOPE.SMALL' | translate"
+
+        <div class="flex flex-col h-full">
+
+            <!-- Text Section -->
+            <app-text-section [smallTitle]="'TEXT_SECTION.SCOPE.SMALL' | translate"
+                [mainTitle]="'TEXT_SECTION.SCOPE.MAIN' | translate"
+                [description]="'TEXT_SECTION.SCOPE.DESC' | translate">
+            </app-text-section>
+
+            <!-- Arrows -->
+            <div class="mt-auto flex justify-end rtl:justify-start  rtl:flex-row-reverse gap-4 ">
+                <button (click)="scrollLeft()"
+                    class="w-10 h-10 rounded-full bg-gray-100 hover:bg-gray-200 flex items-center justify-center">
+                    <i class="fas fa-arrow-left rtl:fa-arrow-right"></i>
+                </button>
+                <button (click)="scrollRight()"
+                    class="w-10 h-10 rounded-full bg-gray-100 hover:bg-gray-200 flex items-center justify-center">
+                    <i class="fas fa-arrow-right rtl:fa-arrow-left"></i>
+                </button>
+            </div>
+
+        </div>
+
+        <!--   <app-text-section [smallTitle]="'TEXT_SECTION.SCOPE.SMALL' | translate"
             [mainTitle]="'TEXT_SECTION.SCOPE.MAIN' | translate" [description]="'TEXT_SECTION.SCOPE.DESC' | translate">
         </app-text-section>
 
-        <!--   <app-text-section [smallTitle]="'Our Scope'" [mainTitle]="'Sustainable Digital Future'"
-            [description]="'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.'">
-        </app-text-section> -->
 
-        <!-- Scroll Controls -->
+
         <div class="flex justify-end gap-4 rtl:flex-row-reverse">
 
-            <!-- Left Arrow -->
+
             <button (click)="scrollLeft()"
                 class="w-10 h-10 rounded-full bg-gray-100 hover:bg-gray-200 flex items-center justify-center">
                 <i class="fas fa-arrow-left rtl:fa-arrow-right"></i>
             </button>
 
-            <!-- Right Arrow -->
+
             <button (click)="scrollRight()"
                 class="w-10 h-10 rounded-full bg-gray-100 hover:bg-gray-200 flex items-center justify-center">
                 <i class="fas fa-arrow-right rtl:fa-arrow-left"></i>
             </button>
 
-        </div>
-
-        <!-- <div class="flex justify-end gap-4">
-            <button (click)="scrollLeft()"
-                class="w-10 h-10 rounded-full bg-gray-100 hover:bg-gray-200 flex items-center justify-center">
-                ←
-            </button>
-            <button (click)="scrollRight()"
-                class="w-10 h-10 rounded-full bg-gray-100 hover:bg-gray-200 flex items-center justify-center">
-                →
-            </button>
         </div> -->
 
-        <!-- Scrollable Cards -->
+
         <div #scrollContainer class="flex gap-6 overflow-x-auto scroll-smooth pb-4">
             <app-scope-card *ngFor="let item of scopeArr" [title]="item.titleKey | translate"
                 [description]=" item.descriptionKey   | translate" [number]="item.number" [iconSrc]="item.iconSrc"
                 class="min-w-[280px] flex-shrink-0">
             </app-scope-card>
         </div>
-        <!-- TEMP-->
-        <!-- <div #scrollContainer class="flex gap-6 overflow-x-auto scroll-smooth pb-4">
+
+    </div>
+</section>
+
+
+
+
+<!-- TEMP-->
+<!-- <div #scrollContainer class="flex gap-6 overflow-x-auto scroll-smooth pb-4">
             <app-scope-card *ngFor="let item of scopeArr" [title]="item.title" [description]="item.description"
                 [number]="item.number" [iconSrc]="item.iconSrc" class="min-w-[280px] flex-shrink-0">
             </app-scope-card>
         </div> -->
 
-        <!--  <div #scrollContainer class="flex gap-6 overflow-x-auto scroll-smooth pb-4">
+<!--  <div #scrollContainer class="flex gap-6 overflow-x-auto scroll-smooth pb-4">
             <app-scope-card *ngFor="let item of scopeArr" [title]="item.title" [description]="item.description"
                 [number]="item.number" [iconSrc]="item.iconSrc">
             </app-scope-card>
         </div> -->
-    </div>
-</section>
 
 
 <!-- <section class="px-6 md:px-12 py-16 bg-white text-gray-800">
