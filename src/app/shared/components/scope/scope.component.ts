@@ -13,25 +13,25 @@ export class ScopeComponent {
       titleKey: 'SCOPE.G2G.TITLE',
       descriptionKey: 'SCOPE.G2G.DESC',
       number: '01',
-      iconSrc: 'assets/icons/government.svg'  
+      iconSrc: 'assets/icons/grey/government.svg'  
     },
     {
       titleKey: 'SCOPE.G2U.TITLE',
       descriptionKey: 'SCOPE.G2U.DESC',
       number: '02',
-      iconSrc: 'assets/icons/users.svg'
+      iconSrc: 'assets/icons/grey/users.svg'
     },
     {
       titleKey: 'SCOPE.SECURITY.TITLE',
       descriptionKey: 'SCOPE.SECURITY.DESC',
       number: '03',
-      iconSrc: 'assets/icons/shield.svg'
+      iconSrc: 'assets/icons/grey/shield.svg'
     },
     {
       titleKey: 'SCOPE.AI.TITLE',
       descriptionKey: 'SCOPE.AI.DESC',
       number: '04',
-      iconSrc: 'assets/icons/ai.svg'
+      iconSrc: 'assets/icons/grey/ai.svg'
     }
   ];
 

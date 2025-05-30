@@ -12,4 +12,10 @@ export class ScopeCardComponent {
   @Input() number = '';
 
   isHovered = false;
+
+
+  get greenIconSrc(): string {
+    return this.iconSrc.replace('/grey/', '/green/');
+  }
+
 }

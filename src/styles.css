@@ -8,6 +8,19 @@
     --primary-color: #21AF27;
     --accent-color: #343F52;
     --text-color-secondary: #AAB0BC;
+   
+
+    --white: #ffffff;
+    --dark-gray: #343F52;
+    --dark-gray2: #484848;
+    --dark-gray3: #60697B;
+    --dark-gray4: #202020;
+    --gray: #AAB0BC;
+    --light-gray: #F6F7F8;
+    --base-gray: #EDF0F2;
+    --green: #21AF27;
+    --light-green: #92C83E;
+
 }
 
 .theme-default {
@@ -17,8 +30,8 @@
     --accent-color: #343F52;
     --overlay-text-color: #ffffff;
     --overlay-text-secondary:
-        /* #F6F7F8 */
-        #AAB0BC
+        #F6F7F8
+        /*   #AAB0BC */
         /* rgba(255, 255, 255, 0.8) */
     ;
 }
@@ -48,7 +61,7 @@ body {
 [dir="rtl"]:not(i[class*="fa"]),
 :lang(ar) :not(i[class*="fa"]),
 [dir="rtl"] :not(i[class*="fa"]) {
-  font-family: 'AvenirArabic-SharjahGovt';
+    font-family: 'AvenirArabic-SharjahGovt';
 }
 
 

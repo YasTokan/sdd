@@ -11,3 +11,8 @@
 .icon-grey {
     filter: grayscale(100%) brightness(90%);
 }
+
+.card-box:hover {
+  border-color: var(--primary-color);
+}
+
