@@ -27,10 +27,6 @@
                         {{ 'HERO.DESCRIPTION' | translate }}
                     </p>
 
-                    <!-- App Point Component (Absolute Positioned) -->
-                    <!-- <div class="absolute left-64 -bottom-32">
-                        <app-point></app-point>
-                    </div> -->
 
 
                     <!-- 190 part -->
@@ -58,12 +54,6 @@
                 </div>
             </div>
 
-            <!-- 
-             I want this to be under the text and abosulte like the othere (on top the video)  
-            <div>
-                <app-point></app-point>
-            </div>
-            -->
 
             <div style="bottom: 80px;"
                 class="absolute bottom-8 rtl:left-6 ltr:right-6 bg-gradient-to-br from-[var(--accent-color)] to-[var(--primary-color)] text-[var(--overlay-text-color)] rounded-[20px]  w-[270px] shadow-lg">
@@ -72,7 +62,7 @@
                 </div>
                 <img src="../../../../assets/media/images/stats/1.2.svg" />
             </div>
-            <!--  -->
+            <!-- adding cards -->
 
             <div class="absolute" class="absolute ltr:right-[60px] rtl:left-[5px] top-[75px]">
 
@@ -81,12 +71,7 @@
 
             </div>
 
-            <!--  <div class="absolute" style="right: 65px; top: 75px;">
 
-                <img (click)="toggle200()" *ngIf="this.is200" src="../../../../assets/media/images/stats/200.svg"
-                    class="imgPopup">
-
-            </div> -->
 
 
             <div class="absolute bottom-4 left-4 text-[var(--overlay-text-color)] w-full max-w-5xl px-4 md:px-6">
@@ -123,7 +108,7 @@
 <div class="block md:hidden px-4 mt-5">
     <div class="relative overflow-hidden rounded-3xl shadow-lg min-h-[500px]">
 
-        <!-- Background video (absolute fill) -->
+       
         <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover rounded-3xl">
             <source src="assets/media/video/banner.mp4" type="video/mp4" />
             Your browser does not support the video tag.
@@ -146,18 +131,4 @@
 </div>
 
 
-<!-- Popup Modal -->
-<div *ngIf="isPopupVisible" class="fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center z-50">
-    <div class="bg-white rounded-2xl p-6 max-w-sm w-full shadow-xl relative">
-
-        <!-- Close Button -->
-        <button (click)="togglePopup(false)"
-            class="absolute top-3 right-3 text-gray-500 hover:text-black text-2xl leading-none">
-            &times;
-        </button>
-
-        <!-- Modal Content -->
-        <h2 class="text-xl font-semibold mb-3">Popup Title</h2>
-        <p class="text-sm text-gray-600">This is a simple popup content area.</p>
-    </div>
-</div>
+ 
