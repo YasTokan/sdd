@@ -5,12 +5,12 @@
 
 
 
-    <p *ngIf="smallTitle?.toLowerCase()?.includes('vision')"
+    <p *ngIf="!smallTitle?.toLowerCase()?.includes('vision')"
         class="text-h2-mobile md:text-h2 font-avenir font-semibold text-[var(--text-color)] leading-tight tracking-normal">
         {{ mainTitle }}
     </p>
 
-    <p *ngIf="!smallTitle?.toLowerCase()?.includes('vision')"
+    <p *ngIf="smallTitle?.toLowerCase()?.includes('vision')"
         class="text-h3-mobile md:text-h3 font-avenir font-semibold text-[var(--text-color)] leading-tight tracking-normal">
         {{ mainTitle }}
     </p>
