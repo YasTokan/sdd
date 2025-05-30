@@ -16,7 +16,11 @@
     --primary-color: #21AF27;
     --accent-color: #343F52;
     --overlay-text-color: #ffffff;
-    --overlay-text-secondary: /* #F6F7F8 */ #AAB0BC /* rgba(255, 255, 255, 0.8) */;
+    --overlay-text-secondary:
+        /* #F6F7F8 */
+        #AAB0BC
+        /* rgba(255, 255, 255, 0.8) */
+    ;
 }
 
 @font-face {
@@ -27,13 +31,24 @@
     font-style: normal;
 }
 
+*:not([class^="fa"]) {
+    font-family: 'Open Sans', sans-serif !important;
+}
+
+
 body {
     font-family: 'Inter', sans-serif;
 }
 
-:lang(ar),
+/* :lang(ar),
 [dir="rtl"] {
-    font-family: 'AvenirArabic-SharjahGovt';
+     font-family: 'AvenirArabic-SharjahGovt';
+} */
+:lang(ar):not(i[class*="fa"]),
+[dir="rtl"]:not(i[class*="fa"]),
+:lang(ar) :not(i[class*="fa"]),
+[dir="rtl"] :not(i[class*="fa"]) {
+  font-family: 'AvenirArabic-SharjahGovt';
 }
 
 
@@ -52,6 +67,6 @@ body {
     --accent-color: #343F52;
 }
 
-h1{
+h1 {
     font-weight: 300 !important;
 }

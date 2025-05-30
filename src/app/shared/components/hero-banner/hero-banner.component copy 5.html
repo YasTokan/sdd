@@ -13,8 +13,7 @@
 
 
             <div
-                class="absolute inset-0 top-[-250px] bg-black/20 flex items-center text-[var(--overlay-text-color)] px-6 md:px-8 py-6">
-
+                class="absolute inset-0 bg-black/20 flex items-center text-[var(--overlay-text-color)] px-6 md:px-8 py-6">
                 <div class="max-w-md md:max-w-lg space-y-3 relative">
 
                     <!-- Title -->
@@ -38,21 +37,18 @@
                         <app-point (click)="toggle190()" *ngIf="!this.is190"></app-point>
 
                     </div>
-                    <div class="absolute" style="left: 250px; bottom: -270px;">
+                    <div class="absolute" style="left: 250px; bottom: -180px;">
+
                         <img (click)="toggle190()" *ngIf="this.is190"
-                            src="../../../../assets/media/images/stats/190.svg" class="imgPopup">
+                            src="../../../../assets/media/images/stats/190.svg"
+                            style="background-color: rgba(0, 0, 0, 0.3); backdrop-filter: blur(6px);   ">
+
 
                     </div>
 
 
                     <div class="absolute" style="left: 450px; bottom: -138px;">
-                        <app-point (click)="toggle20()" *ngIf="!this.is20 && !this.is190"></app-point>
-                    </div>
-
-                    <div class="absolute" style="left: 250px; bottom: -148px;">
-                        <img (click)="toggle20()" *ngIf="this.is20" src="../../../../assets/media/images/stats/+20.svg"
-                            class="imgPopup">
-
+                        <app-point></app-point>
                     </div>
 
                 </div>
@@ -67,17 +63,10 @@
 
             <div style="bottom: 80px;"
                 class="absolute bottom-8 rtl:left-6 ltr:right-6 bg-gradient-to-br from-[var(--accent-color)] to-[var(--primary-color)] text-[var(--overlay-text-color)] rounded-[20px]  w-[270px] shadow-lg">
-                <div (click)="toggle200()" *ngIf="!this.is200" class="absolute" style="right: 60px; top: -250px;">
+                <div class="absolute" style="right: 60px; top: -250px;">
                     <app-point></app-point>
                 </div>
                 <img src="../../../../assets/media/images/stats/1.2.svg" />
-            </div>
-
-            <div class="absolute" style="right: 65px; top: 75px;">
-           
-                <img (click)="toggle200()" *ngIf="this.is200" src="../../../../assets/media/images/stats/200.svg"
-                    class="imgPopup">
-
             </div>
 
 

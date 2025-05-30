@@ -9,6 +9,8 @@ import { ScopeComponent } from './components/scope/scope.component';
 import { ScopeCardComponent } from './components/scope-card/scope-card.component';
 import { FooterComponent } from './public/footer/footer.component';
 import { TranslateModule } from '@ngx-translate/core';
+import { TempComponentComponent } from './components/temp-component/temp-component.component';
+import { PointComponent } from './components/point/point.component';
 
 
 
@@ -20,7 +22,9 @@ import { TranslateModule } from '@ngx-translate/core';
         TextSectionComponent,
         ScopeComponent,
         ScopeCardComponent,
-        FooterComponent
+        FooterComponent,
+        TempComponentComponent,
+        PointComponent
 
 
     ],
@@ -36,7 +40,8 @@ import { TranslateModule } from '@ngx-translate/core';
         TextSectionComponent,
         ScopeCardComponent,
         ScopeComponent,
-        FooterComponent
+        FooterComponent,
+        TempComponentComponent
 
     ],
     providers: [],

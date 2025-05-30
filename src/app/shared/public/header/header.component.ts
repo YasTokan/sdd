@@ -22,18 +22,44 @@ export class HeaderComponent implements OnInit {
     this.mobileMenuOpen = false;
   }
 
-  constructor(private translate: TranslateService) {
+  constructor(public translate: TranslateService) {
 
+  }
+
+
+  showAccessibilityPanel = false;
+
+  toggleAccessibilityPanel() {
+    this.showAccessibilityPanel = !this.showAccessibilityPanel;
+  }
+
+
+  get isRtl(): boolean {
+    return this.translate.currentLang === 'ar';
   }
   switchLang(lang: string) {
     document.documentElement.lang = lang;
     this.translate.use(lang);
     document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
 
-    // Optional: toggle body class for Tailwind RTL if used
+
     document.body.classList.toggle('rtl', lang === 'ar');
   }
 
+
+
+  switchLangTrans(tlang?: string) {
+    let lang = "en"
+    if (tlang == "العربية") {
+      lang = 'ar'
+    }
+    document.documentElement.lang = lang;
+    this.translate.use(lang);
+    document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+
+
+    document.body.classList.toggle('rtl', lang === 'ar');
+  }
 
   textSizes = [
     { key: 'xs', label: 'A--' },

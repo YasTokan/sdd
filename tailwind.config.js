@@ -37,7 +37,7 @@ module.exports = {
       }, */
       fontFamily: {
         body: ['Inter', 'sans-serif'], // For English
-        arabic: ['AvenirArabic-SharjahGovt', 'sans-serif'] // For Arabic
+        // arabic: ['AvenirArabic-SharjahGovt', 'sans-serif'] // For Arabic
       },
       fontSize: {
         h1: ['40px', { lineHeight: '1.2' }],
@@ -88,12 +88,28 @@ module.exports = {
         'scale-in': {
           '0%': { transform: 'scale(0.95)', opacity: '0' },
           '100%': { transform: 'scale(1)', opacity: '1' }
-        }
+        },
+        /* pulseRing: {
+       '0%': { transform: 'scale(0.8)', opacity: '1' },
+       '100%': { transform: 'scale(2.2)', opacity: '0' },
+     }, */
+
+        pulseRing: {
+          '0%': { transform: 'scale(0.9)', opacity: '0.3' },
+          '100%': { transform: 'scale(2.5)', opacity: '0' },
+        },
+
+        pulseColor: {
+          '0%, 100%': { backgroundColor: 'white' },
+          '50%': { backgroundColor: 'var(--primary-color)' },
+        },
       },
       animation: {
         'fade-in-up': 'fade-in-up 2.8s ease-out forwards',
         'zoom-in': 'zoom-in 3.6s ease-out forwards',
-        'scale-in': 'scale-in 5.5s ease-out forwards'
+        'scale-in': 'scale-in 5.5s ease-out forwards',
+        'pulse-ring': 'pulseRing 2.5s cubic-bezier(0.66, 0, 0, 1) infinite',
+        'pulse-color': 'pulseColor 2.5s ease-in-out infinite',
       }
     }
   },

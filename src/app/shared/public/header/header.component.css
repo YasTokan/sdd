@@ -1,3 +1,7 @@
 a{
     cursor: pointer;
 }
+
+*:not([class^="fa"]) {
+  font-family: 'Open Sans', sans-serif !important;
+}

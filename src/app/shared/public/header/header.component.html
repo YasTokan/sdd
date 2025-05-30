@@ -26,8 +26,23 @@
         </nav>
 
         <!-- Right: Language & Icon -->
-        <div class="flex items-center space-x-4 rtl:space-x-reverse text-sm text-gray-800">
-            <!--  <span>العربية</span> -->
+
+        <div class="flex items-center gap-4 md:gap-5 text-sm text-gray-800 rtl:flex-row-reverse">
+            <span style="cursor: pointer;" (click)="toggleAccessibilityPanel()">
+                <i class="fas fa-universal-access text-2xl"></i></span>
+            <!--  <span *ngIf="isRtl" style="cursor: pointer;">
+ 
+                <img src="../../../../assets/icons/accessablity.svg" class="text-gray-800" style="width: 28px;" />
+            </span> -->
+            <span>|</span>
+
+            <span (click)="switchLangTrans(translate.instant('NAV.LANG'))" class="hidden md:inline"
+                style="cursor: pointer;">{{ 'NAV.LANG' |
+                translate }}</span>
+        </div>
+
+        <!-- <div class="flex items-center space-x-4 rtl:space-x-reverse text-sm text-gray-800">
+         
 
             <div class="flex items-center space-x-2">
                 <button (click)="switchLang('en')">EN</button>
@@ -40,7 +55,7 @@
                         d="M10 2a2 2 0 110 4 2 2 0 010-4zm1 6V7H9v1a3 3 0 00-3 3v5a1 1 0 001 1h2v-4h2v4h2a1 1 0 001-1v-5a3 3 0 00-3-3z" />
                 </svg>
             </button>
-        </div>
+        </div> -->
     </div>
 </header>
 
@@ -110,8 +125,7 @@
             </div>
         </div>
 
-        <!-- Contrast Switch -->
-        <!-- Contrast Switch -->
+
         <div class="mt-6 space-y-1 text-sm text-gray-700">
             <p class="font-semibold">{{ 'ACCESSIBILITY.CONTRAST.TITLE' | translate }}</p>
             <p>{{ 'ACCESSIBILITY.CONTRAST.DESCRIPTION' | translate }}</p>
@@ -149,4 +163,77 @@
         </div>
          
     </nav> -->
+</div>
+
+
+
+<!-- Model -->
+<div *ngIf="showAccessibilityPanel"
+    class="fixed right-16 top-24 z-50 w-[320px] bg-white rounded-xl shadow-lg p-6 text-sm text-black">
+
+     <div class="mt-6 space-y-1 text-sm text-gray-700">
+            <p class="font-semibold">{{ 'ACCESSIBILITY.TEXT_RESIZE.TITLE' | translate }}</p>
+            <p>{{ 'ACCESSIBILITY.TEXT_RESIZE.DESCRIPTION' | translate }}</p>
+
+            <div class="flex gap-2 mt-2">
+                <button *ngFor="let size of textSizes" (click)="setFontSize(size.key)" [ngClass]="{
+        'bg-black text-white': activeFontSize === size.key,
+        'bg-white text-black': activeFontSize !== size.key
+      }" class="w-10 h-10 border rounded-full flex items-center justify-center text-sm transition-colors">
+                    {{ size.label }}
+                </button>
+            </div>
+        </div>
+
+
+        <div class="mt-6 space-y-1 text-sm text-gray-700">
+            <p class="font-semibold">{{ 'ACCESSIBILITY.CONTRAST.TITLE' | translate }}</p>
+            <p>{{ 'ACCESSIBILITY.CONTRAST.DESCRIPTION' | translate }}</p>
+
+            <div class="mt-3 space-y-2">
+                <label *ngFor="let option of contrastOptions" (click)="setContrast(option.key)"
+                    class="flex items-center gap-3 cursor-pointer">
+                    <span class="w-5 h-5 rounded-full border-2 inline-block transition-colors" [ngClass]="{
+          'border-black bg-black': selectedContrast === option.key,
+          'border-gray-400 bg-white': selectedContrast !== option.key
+        }"></span>
+                    <span [class.font-medium]="selectedContrast === option.key">
+                        {{ option.label | translate }}
+                    </span>
+                </label>
+            </div>
+        </div>
+        
+  <!--   <h2 class="font-semibold mb-2">Text Resize</h2>
+    <p class="mb-3">Use the buttons below to increase or decrease the text size</p>
+    <div class="flex justify-between mb-4">
+        <button class="w-10 h-10 border rounded-full">A--</button>
+        <button class="w-10 h-10 border rounded-full">A-</button>
+        <button class="w-10 h-10 border rounded-full bg-black text-white">A</button>
+        <button class="w-10 h-10 border rounded-full">A+</button>
+        <button class="w-10 h-10 border rounded-full">A++</button>
+    </div>
+
+    <h2 class="font-semibold mb-2">Contrast Switch</h2>
+    <p class="mb-3">Use the toggle below to switch the contrast.</p>
+    <div class="space-y-3 mb-4">
+        <label class="flex items-center gap-3">
+            <span class="w-5 h-5 rounded-full border-4 border-black bg-black inline-block"></span>
+            <span>SDD Colors</span>
+        </label>
+        <label class="flex items-center gap-3">
+            <span class="w-5 h-5 rounded-full border border-black inline-block"></span>
+            <span>Color Blind</span>
+        </label>
+        <label class="flex items-center gap-3">
+            <span class="w-5 h-5 rounded-full border border-black inline-block"></span>
+            <span>Green Weeknes</span>
+        </label>
+    </div>
+
+    <h2 class="font-semibold mb-2">Screen Reader</h2>
+    <p class="mb-3">Listen to the content of the page by clicking play on read speaker</p>
+    <button class="w-10 h-10 rounded-full bg-black text-white flex items-center justify-center">
+        <i class="fas fa-volume-up"></i>
+    </button> -->
 </div>
