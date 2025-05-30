@@ -37,7 +37,7 @@ module.exports = {
       }, */
       fontFamily: {
         body: ['Inter', 'sans-serif'], // For English
-        // arabic: ['AvenirArabic-SharjahGovt', 'sans-serif'] // For Arabic
+        arabic: ['AvenirArabic-SharjahGovt', 'sans-serif'] // For Arabic
       },
       fontSize: {
         h1: ['40px', { lineHeight: '1.2' }],
