@@ -9,28 +9,29 @@
 
         </div>
 
-        <!-- Navigation -->
-        <nav class="flex flex-wrap justify-center gap-6   text-sm font-medium text-black text-center rtl:text-right">
+        <!-- Navigation text-sm font-medium text-black -->
+        <nav
+            class="flex flex-wrap justify-center gap-6  text-body-l text-[var(--overlay-text-secondary)]  text-center rtl:text-right">
             <a (click)="jumpToSection('home')" style="cursor: pointer;">{{ 'NAV.HOME' | translate }}</a>
-            <a (click)="jumpToSection('vision')" class=" transition">{{ 'NAV.VISION' | translate
+            <a (click)="jumpToSection('vision')" class=" transition text-body-l">{{ 'NAV.VISION' | translate
                 }}</a>
-            <a (click)="jumpToSection('scope')" class=" transition">{{ 'NAV.SCOPE' | translate
+            <a (click)="jumpToSection('scope')" class=" transition text-body-l">{{ 'NAV.SCOPE' | translate
                 }}</a>
-            <a (click)="jumpToSection('home')" class=" transition">{{ 'NAV.SERVICES' | translate
+            <a (click)="jumpToSection('home')" class=" transition text-body-l">{{ 'NAV.SERVICES' | translate
                 }}</a>
-            <a (click)="jumpToSection('home')" class=" transition">{{ 'NAV.INITIATIVES' | translate
+            <a (click)="jumpToSection('home')" class=" transition text-body-l">{{ 'NAV.INITIATIVES' | translate
                 }}</a>
-            <a (click)="jumpToSection('home')" class=" transition">{{ 'NAV.DOWNLOAD' | translate
+            <a (click)="jumpToSection('home')" class=" transition text-body-l">{{ 'NAV.DOWNLOAD' | translate
                 }}</a>
         </nav>
     </div>
 
     <!-- Bottom row -->
     <div
-        class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between text-xs text-gray-400 text-center rtl:text-right mt-6">
+        class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between text-body-l text-gray-400 text-center rtl:text-right mt-6">
 
         <!-- Copyright -->
-        <p>{{ 'FOOTER.COPYRIGHT' | translate }}</p>
+        <p class="text-body">{{ 'FOOTER.COPYRIGHT' | translate }}</p>
 
         <!-- Social -->
         <div class="flex items-center space-x-3 rtl:space-x-reverse mx-[3%] mt-4 sm:mt-0 text-sm text-gray-500">
