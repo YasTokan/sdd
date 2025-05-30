@@ -17,7 +17,8 @@
                 <!-- Profile 1 -->
                 <div class="flex items-center gap-4 rtl:gap-4 opacity-0 animate-zoom-in delay-100">
                     <div class="text-start rtl:text-end order-2 rtl:order-2">
-                        <div class="h-1 w-8 bg-lime-500 mb-2 rtl:text-right"></div>
+                        <!-- <div class="h-1 w-8 bg-lime-500 mb-2 rtl:text-right"></div> -->
+                        <div class="h-1 w-8 bg-[var(--light-green)] mb-2 rtl:text-right"></div>
                         <div class="font-semibold text-sm rtl:text-right">{{ 'TEAM.PERSON_1.NAME' | translate }}</div>
                         <div class="text-subtitle text-[var(--text-color-secondary)] rtl:text-right">{{
                             'TEAM.PERSON_1.ROLE' | translate }}</div>
@@ -29,7 +30,8 @@
                 <!-- Profile 2 -->
                 <div class="flex items-center gap-4 rtl:gap-4 opacity-0 animate-zoom-in delay-100">
                     <div class="text-start rtl:text-end order-2 rtl:order-2">
-                        <div class="h-1 w-8 bg-lime-500 mb-2 rtl:text-right"></div>
+                        <!--  <div class="h-1 w-8 bg-lime-500 mb-2 rtl:text-right"></div> -->
+                        <div class="h-1 w-8 bg-[var(--light-green)] mb-2 rtl:text-right"></div>
                         <div class="font-semibold text-sm rtl:text-right">{{ 'TEAM.PERSON_2.NAME' | translate }}</div>
                         <div class="text-subtitle text-[var(--text-color-secondary)] rtl:text-right">{{
                             'TEAM.PERSON_2.ROLE' | translate }}</div>
@@ -48,7 +50,7 @@
         <!-- Right: 190 Video Number -->
         <!--   proud to serve -->
 
-        <div class="relative w-[500px] h-[350px] mx-auto flex flex-col items-center justify-center space-y-5 text-center rtl:text-right"
+        <div class="relative w-[500px] h-[380px] mx-auto flex flex-col items-center justify-center space-y-5 text-center rtl:text-right"
             style="margin-top: 15%;">
 
             <!-- Top Label -->
@@ -61,7 +63,7 @@
             <div class="relative w-full h-full">
                 <svg viewBox="0 0 500 400" class="absolute w-full h-full pointer-events-none">
                     <defs>
-                        <mask id="video-text-mask" maskUnits="userSpaceOnUse" x="0" y="0" width="500" height="600">
+                        <mask id="video-text-mask" maskUnits="userSpaceOnUse" x="0" y="0" width="500" height="400">
                             <rect width="100%" height="100%" fill="black" />
                             <text x="50%" y="60%" text-anchor="middle" font-size="320" font-weight="bold" fill="white"
                                 font-family="Arial, sans-serif">190</text>
@@ -88,7 +90,7 @@
 
 
     <!-- Mobile Layout -->
-    <div class="block md:hidden space-y-10 px-6">
+    <div class="block md:hidden max-w-1xl mx-auto space-y-10  ">
 
         <!--   <div class="flex flex-col items-center space-y-4">
             <p class="text-xl font-bold text-gray-600">Proud to Serve</p>
@@ -119,7 +121,7 @@
         <div class="flex flex-col items-center space-y-4 text-center rtl:text-right">
 
             <!-- Top Text -->
-            <p class="text-xl font-bold text-gray-600">{{ 'SERVED.TITLE' | translate }}</p>
+            <p class="text-h4 md:text-h4-mobile font-bold var(--gray) ">{{ 'SERVED.TITLE' | translate }}</p>
 
             <!-- Masked Video -->
             <div class="relative w-full h-[220px] flex justify-center items-center">
@@ -140,7 +142,8 @@
             </div>
 
             <!-- Bottom Text -->
-            <p class="text-lg font-bold text-gray-800">{{ 'SERVED.COUNT_LABEL' | translate }}</p>
+            <p class="text-h4 md:text-h4-mobile font-bold var(--text-color) font-bold  ">{{ 'SERVED.COUNT_LABEL' |
+                translate }}</p>
         </div>
 
         <!-- Temp -->

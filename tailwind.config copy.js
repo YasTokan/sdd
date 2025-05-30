@@ -18,6 +18,26 @@ module.exports = {
         green: '#21AF27',
         'light-green': '#92C83E'
       }, */
+
+      /*  fontSize: {
+       h1: ['53px', { lineHeight: '1.2' }],
+       'h1-mobile': ['32px', { lineHeight: '1.2' }],
+       h2: ['56px', { lineHeight: '1.2' }],
+       'h2-mobile': ['37px', { lineHeight: '1.2' }],
+       h3: ['36px', { lineHeight: '1.2' }],
+       'h3-mobile': ['32px', { lineHeight: '1.2' }],
+       h4: ['35px', { lineHeight: '1.2' }],
+       'h4-mobile': ['32px', { lineHeight: '1.2' }],
+       h5: ['27px', { lineHeight: '1.2' }],
+       'h5-mobile': ['21px', { lineHeight: '1.2' }],
+       body: ['19px', { lineHeight: '1.6' }],
+       'body-l': ['21px', { lineHeight: '1.6' }],
+       'body-s': ['16px', { lineHeight: '1.5' }],
+       subtitle: ['21px', { lineHeight: '1.4' }],
+       subhead: ['24px', { lineHeight: '1.4' }],
+       'subhead-mobile': ['19px', { lineHeight: '1.4' }],
+     }, */
+
       colors: {
         bg: 'var(--bg-color)',
         text: 'var(--text-color)',

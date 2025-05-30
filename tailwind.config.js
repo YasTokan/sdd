@@ -39,6 +39,8 @@ module.exports = {
         body: ['Inter', 'sans-serif'], // For English
         arabic: ['AvenirArabic-SharjahGovt', 'sans-serif'] // For Arabic
       },
+
+      /* Fonts I decreased to make a bit more realstic and match the design */
       fontSize: {
         h1: ['40px', { lineHeight: '1.2' }],
         'h1-mobile': ['24px', { lineHeight: '1.2' }],
@@ -53,29 +55,32 @@ module.exports = {
         body: ['14px', { lineHeight: '1.6' }],
         'body-l': ['16px', { lineHeight: '1.6' }],
         'body-s': ['12px', { lineHeight: '1.5' }],
+
         subtitle: ['16px', { lineHeight: '1.4' }],
         subhead: ['18px', { lineHeight: '1.4' }],
         'subhead-mobile': ['14px', { lineHeight: '1.4' }],
       }
-      ,
+
+      /* Fonts are they suggested but too big to use */
       /*  fontSize: {
-         h1: ['53px', { lineHeight: '1.2' }],
-         'h1-mobile': ['32px', { lineHeight: '1.2' }],
-         h2: ['56px', { lineHeight: '1.2' }],
-         'h2-mobile': ['37px', { lineHeight: '1.2' }],
-         h3: ['36px', { lineHeight: '1.2' }],
-         'h3-mobile': ['32px', { lineHeight: '1.2' }],
-         h4: ['35px', { lineHeight: '1.2' }],
-         'h4-mobile': ['32px', { lineHeight: '1.2' }],
-         h5: ['27px', { lineHeight: '1.2' }],
-         'h5-mobile': ['21px', { lineHeight: '1.2' }],
-         body: ['19px', { lineHeight: '1.6' }],
-         'body-l': ['21px', { lineHeight: '1.6' }],
-         'body-s': ['16px', { lineHeight: '1.5' }],
-         subtitle: ['21px', { lineHeight: '1.4' }],
-         subhead: ['24px', { lineHeight: '1.4' }],
-         'subhead-mobile': ['19px', { lineHeight: '1.4' }],
-       }, */
+      h1: ['53.3px', { lineHeight: '1.2' }],
+      'h1-mobile': ['32px', { lineHeight: '1.2' }],
+      h2: ['56px', { lineHeight: '1.2' }],
+      'h2-mobile': ['37.3px', { lineHeight: '1.2' }],
+      h3: ['48px', { lineHeight: '1.2' }],
+      'h3-mobile': ['32px', { lineHeight: '1.2' }],
+      h4: ['34.7px', { lineHeight: '1.2' }],
+      'h4-mobile': ['32px', { lineHeight: '1.2' }],
+      h5: ['26.7px', { lineHeight: '1.4' }],
+      'h5-mobile': ['21.3px', { lineHeight: '1.4' }],
+      body: ['18.7px', { lineHeight: '1.6' }],
+      'body-l': ['21.3px', { lineHeight: '1.6' }],
+      'body-s': ['16px', { lineHeight: '1.5' }],
+      subtitle: ['21.3px', { lineHeight: '1.5' }],
+      subhead: ['24px', { lineHeight: '1.5' }],
+      'subhead-mobile': ['18.7px', { lineHeight: '1.5' }],
+    } */
+      ,
       keyframes: {
         'fade-in-up': {
           '0%': { opacity: 0, transform: 'translateY(20px)' },
