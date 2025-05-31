@@ -24,7 +24,7 @@
                             'TEAM.PERSON_1.ROLE' | translate }}</div>
                     </div>
                     <img src="assets/media/images/people/shik.saud.jpg" alt="{{ 'TEAM.PERSON_1.NAME' | translate }}"
-                        class="w-28 h-28 object-cover rounded-md order-1 rtl:order-1" />
+                        class="w-32 h-32 object-cover rounded-md order-1 rtl:order-1" />
                 </div>
 
                 <!-- Profile 2 -->
@@ -37,7 +37,7 @@
                             'TEAM.PERSON_2.ROLE' | translate }}</div>
                     </div>
                     <img src="assets/media/images/people/eng.lamia.jpg" alt="{{ 'TEAM.PERSON_2.NAME' | translate }}"
-                        class="w-28 h-28 object-cover rounded-md order-1 rtl:order-1" />
+                        class="w-32 h-32 object-cover rounded-md order-1 rtl:order-1 flex-shrink-0" />
                 </div>
 
             </div>
@@ -55,7 +55,8 @@
 
             <!-- Top Label -->
             <div class="relative z-10 self-start rtl:self-start">
-                <p class="text-h4-mobile md:text-h4 text-[var(--text-color-secondary)] font-bold text-gray-600">{{ 'SERVED.TITLE' |
+                <p class="text-h4-mobile md:text-h4 text-[var(--text-color-secondary)] font-bold text-gray-600">{{
+                    'SERVED.TITLE' |
                     translate }}</p>
             </div>
 
@@ -80,7 +81,8 @@
 
             <!-- Bottom Label -->
             <div class="relative z-10">
-                <p class="text-h4-mobile md:text-h4 text-[var(--text-color-primary)] ">{{ 'SERVED.COUNT_LABEL' | translate }}</p>
+                <p class="text-h4-mobile md:text-h4 text-[var(--text-color-primary)] ">{{ 'SERVED.COUNT_LABEL' |
+                    translate }}</p>
             </div>
         </div>
 
@@ -107,7 +109,7 @@
                                 font-family="Arial,AvenirArabic-SharjahGovt">190</text>
                         </mask>
                     </defs>
-                </svg> 
+                </svg>
 
                 <video autoplay muted loop playsinline class="w-[300px] h-full object-cover"
                     style="mask: url(#video-text-mask-mobile); -webkit-mask: url(#video-text-mask-mobile); mask-type: alpha; -webkit-mask-type: alpha;">
@@ -149,7 +151,7 @@
             </div>
 
             <!-- Person 2 -->
-            <div class="flex items-center gap-4 rtl:gap-4 opacity-0 animate-zoom-in delay-400">
+            <div class="flex items-center gap-4 rtl:gap-4 opacity-0 animate-zoom-in flex-shrink-0 delay-400">
                 <img src="assets/media/images/people/eng.lamia.jpg" alt="{{ 'TEAM.PERSON_2.NAME' | translate }}"
                     class="w-20 h-20 object-cover rounded-md order-1 rtl:order-1" />
                 <div class="text-start rtl:text-end order-2 rtl:order-1">
