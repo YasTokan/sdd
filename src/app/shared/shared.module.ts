@@ -11,6 +11,8 @@ import { FooterComponent } from './public/footer/footer.component';
 import { TranslateModule } from '@ngx-translate/core';
 import { TempComponentComponent } from './components/temp-component/temp-component.component';
 import { PointComponent } from './components/point/point.component';
+import { TeamMemberMobileComponent } from './components/team-member-mobile/team-member-mobile.component';
+import { TeamMemberComponent } from './components/team-member/team-member.component';
 
 
 
@@ -24,7 +26,9 @@ import { PointComponent } from './components/point/point.component';
         ScopeCardComponent,
         FooterComponent,
         TempComponentComponent,
-        PointComponent
+        PointComponent,
+        TeamMemberMobileComponent,
+        TeamMemberComponent
 
 
     ],
@@ -41,7 +45,8 @@ import { PointComponent } from './components/point/point.component';
         ScopeCardComponent,
         ScopeComponent,
         FooterComponent,
-        TempComponentComponent
+        TempComponentComponent,
+        TeamMemberMobileComponent
 
     ],
     providers: [],

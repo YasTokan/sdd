@@ -1,0 +1,9 @@
+<div class="flex items-center gap-4 rtl:gap-4 opacity-0 animate-zoom-in delay-100">
+    <div class="text-start rtl:text-end order-2 rtl:order-2">
+        <div class="h-1 w-8 bg-[var(--light-green)] mb-2 rtl:text-right"></div>
+        <div class="font-semibold text-sm rtl:text-right">{{ member.name | translate }}</div>
+        <div class="text-subtitle text-[var(--text-color-secondary)] rtl:text-right">{{ member.role | translate }}</div>
+    </div>
+    <img [src]="member.image" [alt]="member.name | translate"
+        class="w-32 h-32 object-cover rounded-md order-1 rtl:order-1" />
+</div>

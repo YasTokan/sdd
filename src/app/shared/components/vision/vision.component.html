@@ -14,31 +14,9 @@
             </div>
             <div class="grid grid-cols-2     ">
 
-                <!-- Profile 1 -->
-                <div class="flex items-center gap-4 rtl:gap-4 opacity-0 animate-zoom-in delay-100">
-                    <div class="text-start rtl:text-end order-2 rtl:order-2">
 
-                        <div class="h-1 w-8 bg-[var(--light-green)] mb-2 rtl:text-right"></div>
-                        <div class="font-semibold text-sm rtl:text-right">{{ 'TEAM.PERSON_1.NAME' | translate }}</div>
-                        <div class="text-subtitle text-[var(--text-color-secondary)] rtl:text-right">{{
-                            'TEAM.PERSON_1.ROLE' | translate }}</div>
-                    </div>
-                    <img src="assets/media/images/people/shik.saud.jpg" alt="{{ 'TEAM.PERSON_1.NAME' | translate }}"
-                        class="w-32 h-32 object-cover rounded-md order-1 rtl:order-1" />
-                </div>
+                <app-team-member *ngFor="let member of teamMembers" [member]="member"></app-team-member>
 
-                <!-- Profile 2 -->
-                <div class="flex items-center gap-4 rtl:gap-4 opacity-0 animate-zoom-in delay-100">
-                    <div class="text-start rtl:text-end order-2 rtl:order-2">
-
-                        <div class="h-1 w-8 bg-[var(--light-green)] mb-2 rtl:text-right"></div>
-                        <div class="font-semibold text-sm rtl:text-right">{{ 'TEAM.PERSON_2.NAME' | translate }}</div>
-                        <div class="text-subtitle text-[var(--text-color-secondary)] rtl:text-right">{{
-                            'TEAM.PERSON_2.ROLE' | translate }}</div>
-                    </div>
-                    <img src="assets/media/images/people/eng.lamia.jpg" alt="{{ 'TEAM.PERSON_2.NAME' | translate }}"
-                        class="w-32 h-32 object-cover rounded-md order-1 rtl:order-1 flex-shrink-0" />
-                </div>
 
             </div>
 
@@ -137,30 +115,7 @@
 
         <div class="space-y-6">
 
-            <!-- Person 1 -->
-
-            <div class="flex items-center gap-4 rtl:gap-4 opacity-0 animate-zoom-in delay-300">
-                <img src="assets/media/images/people/shik.saud.jpg" alt="{{ 'TEAM.PERSON_1.NAME' | translate }}"
-                    class="w-20 h-20 object-cover rounded-md order-1 rtl:order-1" />
-                <div class="text-start rtl:text-end order-2 rtl:order-1">
-                    <div class="h-1 w-8 bg-[var(--light-green)] mb-2 rtl:text-right"></div>
-                    <div class="font-semibold text-sm  rtl:text-right">{{ 'TEAM.PERSON_1.NAME' | translate }}</div>
-                    <div class="text-subtitle text-[var(--text-color-secondary)] rtl:text-right">{{ 'TEAM.PERSON_1.ROLE'
-                        | translate }}</div>
-                </div>
-            </div>
-
-            <!-- Person 2 -->
-            <div class="flex items-center gap-4 rtl:gap-4 opacity-0 animate-zoom-in flex-shrink-0 delay-400">
-                <img src="assets/media/images/people/eng.lamia.jpg" alt="{{ 'TEAM.PERSON_2.NAME' | translate }}"
-                    class="w-20 h-20 object-cover rounded-md order-1 rtl:order-1" />
-                <div class="text-start rtl:text-end order-2 rtl:order-1">
-                    <div class="h-1 w-8 bg-[var(--light-green)] mb-2 rtl:text-right"></div>
-                    <div class="font-semibold text-sm rtl:text-right">{{ 'TEAM.PERSON_2.NAME' | translate }}</div>
-                    <div class="text-subtitle text-[var(--text-color-secondary)] rtl:text-right">{{ 'TEAM.PERSON_2.ROLE'
-                        | translate }}</div>
-                </div>
-            </div>
+            <app-team-member-mobile *ngFor="let member of teamMembers" [member]="member"></app-team-member-mobile>
 
         </div>
 
