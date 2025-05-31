@@ -12,7 +12,8 @@
 
         <!-- Center: Navigation -->
         <nav class="flex space-x-6 rtl:space-x-reverse text-sm font-medium text-gray-800">
-            <a (click)="jumpToSection('home')"  class=" transition text-body-l" style="cursor: pointer;">{{ 'NAV.HOME' | translate }}</a>
+            <a (click)="jumpToSection('home')" class=" transition text-body-l" style="cursor: pointer;">{{ 'NAV.HOME' |
+                translate }}</a>
             <a (click)="jumpToSection('vision')" class=" transition text-body-l">{{ 'NAV.VISION' | translate
                 }}</a>
             <a (click)="jumpToSection('scope')" class=" transition text-body-l">{{ 'NAV.SCOPE' | translate
@@ -47,8 +48,11 @@
     <div class="flex items-center space-x-4 rtl:space-x-reverse">
 
         <div class="flex items-center space-x-2">
-            <button (click)="switchLang('en')">EN</button>
-            <button (click)="switchLang('ar')">العربية</button>
+            <!-- <button (click)="switchLang('en')">EN</button>
+            <button (click)="switchLang('ar')">العربية</button> -->
+            <span (click)="switchLangTrans(translate.instant('NAV.LANG'))" 
+                style="cursor: pointer;">{{ 'NAV.LANG' |
+                translate }}</span>
         </div>
         <button (click)="toggleMenu()" class="text-gray-800">
             <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
@@ -68,8 +72,12 @@
         <div class="flex items-center space-x-4 rtl:space-x-reverse">
 
             <div class="flex items-center space-x-2">
-                <button (click)="switchLang('en')">EN</button>
-                <button (click)="switchLang('ar')">العربية</button>
+                <!-- <button (click)="switchLang('en')">EN</button>
+                <button (click)="switchLang('ar')">العربية</button> -->
+
+                <span (click)="switchLangTrans(translate.instant('NAV.LANG'))" 
+                    style="cursor: pointer;">{{ 'NAV.LANG' |
+                    translate }}</span>
             </div>
             <button (click)="closeMenu()" class="text-gray-800">
                 <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
@@ -83,13 +91,16 @@
     <nav class="space-y-4 border-t pt-4">
 
         <!-- Navigation Links -->
-        <a (click)="jumpToSection('home')" class="block text-body-l text-gray-900 border-b pb-2">{{ 'NAV.HOME' | translate
+        <a (click)="jumpToSection('home')" class="block text-body-l text-gray-900 border-b pb-2">{{ 'NAV.HOME' |
+            translate
             }}</a>
         <a (click)="jumpToSection('vision')" class="block text-body-l text-gray-900 border-b pb-2">{{ 'NAV.VISION' |
             translate }}</a>
-        <a (click)="jumpToSection('scope')" class="block text-body-l text-gray-900 border-b pb-2">{{ 'NAV.SCOPE' | translate
+        <a (click)="jumpToSection('scope')" class="block text-body-l text-gray-900 border-b pb-2">{{ 'NAV.SCOPE' |
+            translate
             }}</a>
-        <a href="#" class=" transition text-body-l" class="block text-body-l text-gray-900 border-b pb-2">{{ 'NAV.SERVICES' | translate }}</a>
+        <a href="#" class=" transition text-body-l" class="block text-body-l text-gray-900 border-b pb-2">{{
+            'NAV.SERVICES' | translate }}</a>
         <a href="#" class="block text-body-l text-gray-900 border-b pb-2">{{ 'NAV.INITIATIVES' | translate }}</a>
         <a href="#" class="block text-body-l text-gray-900 border-b pb-2">{{ 'NAV.DOWNLOAD' | translate }}</a>
 
