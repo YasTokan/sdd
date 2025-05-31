@@ -32,9 +32,7 @@ module.exports = {
         lg: '1.125rem',
         xl: '1.25rem'
       },
-      /* fontFamily: {
-        avenir: ['AvenirArabic-SharjahGovt', 'sans-serif']
-      }, */
+
       fontFamily: {
         body: ['Inter', 'sans-serif'], // For English
         arabic: ['AvenirArabic-SharjahGovt', 'sans-serif'] // For Arabic

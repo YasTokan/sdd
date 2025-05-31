@@ -99,6 +99,7 @@ export class HeaderComponent implements OnInit {
 
 
   jumpToSection(section: string | null) {
+    this.closeMenu()
     if (section) document.getElementById(section)?.scrollIntoView({ behavior: 'smooth' });
   }
 

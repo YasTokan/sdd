@@ -12,7 +12,8 @@
         <!-- Navigation text-sm font-medium text-black -->
         <nav
             class="flex flex-wrap justify-center gap-6  text-body-l text-[var(--overlay-text-secondary)]  text-center rtl:text-right">
-            <a (click)="jumpToSection('home')" class=" transition text-body-l" style="cursor: pointer;">{{ 'NAV.HOME' | translate }}</a>
+            <a (click)="jumpToSection('home')" class=" transition text-body-l" style="cursor: pointer;">{{ 'NAV.HOME' |
+                translate }}</a>
             <a (click)="jumpToSection('vision')" class=" transition text-body-l">{{ 'NAV.VISION' | translate
                 }}</a>
             <a (click)="jumpToSection('scope')" class=" transition text-body-l">{{ 'NAV.SCOPE' | translate
@@ -34,8 +35,8 @@
         <p class="text-body">{{ 'FOOTER.COPYRIGHT' | translate }}</p>
 
         <!-- Social -->
-        <div class="flex items-center space-x-3 rtl:space-x-reverse mx-[3%] mt-4 sm:mt-0 text-sm text-gray-500">
-            <span>{{ 'FOOTER.FOLLOW' | translate }}</span>
+        <div class="flex items-center space-x-3 rtl:space-x-reverse mx-[3%] mt-4 sm:mt-0 text-body text-gray-500">
+            <span class="text-body">{{ 'FOOTER.FOLLOW' | translate }}</span>
             <a href="#"><i class="fab fa-facebook-f"></i></a>
             <a href="#"><i class="fab fa-instagram"></i></a>
             <a href="#"><i class="fab fa-youtube"></i></a>
